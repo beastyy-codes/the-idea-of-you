@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>For You, My Love</title>
+    <style>
+        body {
+            background: url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=451&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center/cover no-repeat,
+                linear-gradient(120deg, #ffb6b9cc 0%, #fcd5cecc 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 30%, #fffbe5cc 0%, transparent 75%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 32px rgba(255, 182, 185, 0.15);
+            border-radius: 22px;
+            padding: 52px 32px 38px 32px;
+            max-width: 480px;
+            text-align: center;
+            overflow: visible;
+            animation: fadeIn 1.5s;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            color: #abb8c4;
+            margin-bottom: 16px;
+            font-size: 2.25em;
+            letter-spacing: 1px;
+            animation: slideInFromLeft 0.95s;
+        }
+
+        p {
+            color: #333;
+            font-size: 1.16em;
+            margin-bottom: 44px;
+            line-height: 1.7em;
+            animation: slideInFromRight 1.2s;
+            animation-delay: 0.5s;
+            opacity: 0;
+            animation-fill-mode: forwards;
+        }
+
+        /* .heart {
+            font-size: 3.6em;
+            color: #ff6f91;
+            animation: heartGlow 1.6s infinite alternate;
+            text-shadow: 0 0 10px #ffb6b9, 0 0 24px #ffd6d6;
+        }
+
+        .cat-gallery {
+            margin-bottom: 16px;
+        }
+
+        .cat-img {
+            width: 78px;
+            height: 78px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 0 10px;
+            box-shadow: 0 0 12px #fcd5ce88;
+            filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.09));
+            background: #fffefa;
+            vertical-align: middle;
+            transition: transform 0.18s;
+            border: 2.5px solid #fbeeac;
+            animation: floatCat 3.2s ease-in-out infinite alternate;
+        }
+
+        .cat-img:last-child {
+            animation-delay: 1.2s;
+        }
+
+        .cat-img:hover {
+            transform: scale(1.13) rotate(-5deg);
+            border-color: #f6a769;
+        } */
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(36px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-56px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromRight {
+            0% {
+                opacity: 0;
+                transform: translateX(42px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes heartGlow {
+            0% {
+                filter: drop-shadow(0 0 8px #ffd6d6);
+            }
+
+            100% {
+                filter: drop-shadow(0 0 18px #ffe394);
+            }
+        }
+
+        @keyframes floatCat {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-16px);
+            }
+        }
+
+        .footer-note {
+            font-size: 1em;
+            color: #a998a9;
+            margin-top: 16px;
+            opacity: 0.77;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <div class="heart">❤️</div>
+        <div class="cat-gallery">
+            <img class="cat-img"
+                src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnZ5aWw4aTV0dnVoZm5zN2lwanlnMmF5d211YmdnYmd0cmU3d3hmNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/M9yC8b0x7Y7oA/giphy.gif"
+                alt="Emotional animated cat hugging" title="Cat hug GIF">
+            <img class="cat-img"
+                src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZnpyYWhjbWcycmw1YWFqZnBzZmJzcnN1a3E2OHRvOXY0bms4ZDA4YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/I1nwVpCaB4k36/giphy.gif"
+                alt="Sad animated cat" title="Sad cat GIF">
+        </div> -->
+        <h1>The Idea of You</h1>
+        <p>
+            OH, this rain reminds me of you—<br>
+            The beauty, the charm, the gleamy eyes of you.<br>
+            Your wonderful smile never fails to mesmerize me;<br>
+            I still love the idea of you.<br><br>
+            
+            I don't know what went wrong between us.<br>
+            how this green meadow got reduced to dust.<br>
+            They say true love hurts the most,<br>
+            but I still hold on to the idea of you.<br><br>
+
+            I cherish everything we shared—<br>
+            the madness, the passion, the crazy us.<br>
+            We stood strong no matter what storms came—<br>
+            another reason I love the idea of us.<br><br>
+
+            Hurting you was my worst nightmare,<br>
+            I always dreamed of kissing you forever.<br>
+            You're the one I cared for the most,<br>
+            And I failed to make you feel loved forever.<br><br>
+
+            I stood before the storm, fully armed,<br>
+            taking the blows so you could stay unharmed.<br>
+            Yet an old heatwave struck us hardest of all<br>
+            overshadowing everything that once charmed.<br><br>
+
+            You fell in love with a wanderer—<br>
+            a boy with flaws, lost and unsure.<br>
+            Your love transformed him into a man<br>
+            full of values, full of hope—and you,<br>
+            became the one he wanted beside him for life.<br><br>
+
+            I vowed to treat you like a queen, and I stand by it—<br>
+            I have—still vow to do all the things you love.<br>
+            You still matter most to me, darling.<br>
+            You've called me your 'man,' and I'll stand by it.<br><br>
+
+            You're the answer to my prayers I never expected;<br>
+            You've loved me like a mother, which I've always respected.<br>
+            You gave your heart in your own man's hand,<br>
+            And It got scratched in the way it was least expected.<br><br>
+
+            Since you came into my life, I tried to love you endlessly,<br>
+            Holding you close, giving all I had—<br>
+            But old shadows found their way between us,<br>
+            And you were wounded by ghosts I couldn’t hold back.<br><br>
+
+            You're the one who glowed like chrome—<br>
+            You're my calm, my comfort, my honeycomb.<br>
+            We were always meant to be, and I hope you forgive me,<br>
+            Because you, my baby... I still call you my home.<br><br>
+
+            Oh, I still love the idea of you—<br>
+            The laugh, the presence, the scent of you.<br>
+            I want to love you and experience 'us'<br>
+            like there's no tomorrow.<br>
+            Oh, Shree—this rain reminds me of you.<br><br>
+            <span style="color:#ffffff;">10am, 29th July 2025</span>
+        </p>
+        <div class="heart">💖</div>
+        <div class="footer-note">This is for you, with all my love.</div>
+    </div>
+</body>
+
+</html>
